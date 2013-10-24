@@ -6,24 +6,24 @@ Our very first Rails app. Our goal will be to allow the user to take three actio
 
 When users go to `/lucky_numbers`, they should see their five lucky numbers for the day. These numbers will be randomly chosen.
 
-### Go to `/horoscopes`
+### Go to `/zodiacs`
 
-When users go to `/horoscopes`, they should see a list of the names of each zodiac sign.
+When users go to `/zodiacs`, they should see a list of the names of each zodiac sign.
 
-Make each zodiac sign a link to a url such as `/horoscopes/leo`, `/horoscopes/cancer`, etc.
+Make each zodiac sign a link to a url such as `/zodiacs/leo`, `/zodiacs/cancer`, etc.
 
-### Go to `/horoscopes/:sign`
+### Go to `/zodiacs/:sign`
 
-Make `/horoscopes/leo`, `/horoscopes/cancer`, etc work to display individual fortunes.
+Make `/zodiacs/leo`, `/zodiacs/cancer`, etc work to display individual fortunes.
 
 ### Accessing the Data
 
 I've already prepared a list of signs for you.
 
-You have access to a class called `Horoscope`.
+You have access to a class called `Zodiac`.
 
-You can do `Horoscope.all` to retrieve an `Array` of horoscope `Hash`es.
+You can do `Zodiac.all` to retrieve an `Array` of zodiac `Hash`es.
 
-Each horoscope `Hash` has two keys -- `:sign` and `:fortune`.
+Each zodiac `Hash` has two keys -- `:sign` and `:fortune`.
 
-You can also do `Horoscope.find_by({ :sign => "leo" })` to retrieve a single horoscope `Hash`.
+You can also do `Zodiac.find_by({ :sign => "leo" })` to retrieve a single zodiac `Hash`.

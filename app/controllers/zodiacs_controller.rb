@@ -1,5 +1,5 @@
 class ZodiacsController < ApplicationController
   def show
-    @zodiac = params["sign"]
+    @zodiac = Zodiac.find_by({ :sign => params[:sign] })
   end
 end

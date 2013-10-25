@@ -1,7 +1,7 @@
 class ZodiacsController < ApplicationController
   def show
-    # Parameters: {"sign"=>"anything"}
-    params["sign"]
+    # Parameters: {"sign"=>"libra"}
+    @zodiac = params["sign"]
   end
 
   def ram

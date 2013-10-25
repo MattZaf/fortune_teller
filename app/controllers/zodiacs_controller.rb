@@ -1,4 +1,9 @@
 class ZodiacsController < ApplicationController
+  def show
+    # Parameters: {"sign"=>"anything"}
+    params["sign"]
+  end
+
   def ram
     @prognostication = "As your professional dreams unfold, Aries, you may worry about the downside. First, there are new responsibilities that you might doubt your ability to fulfill. Second, you might be catapulted into an uncomfortable new realm of office politics. Don't let these matters put a damper on your enthusiasm. You have what it takes to fulfill the first concern and the wisdom to avoid the second. Onward and upward."
   end
